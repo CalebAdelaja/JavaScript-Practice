@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="dom.js" defer></script>
+</head>
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+    main{
+        display: block;
+    }
+    .head-title {
+        background-color: yellowgreen;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #000;
+        font-weight: 700;
+        
+    }
+
+    p {
+        font-size: 1rem;
+        color: #cecece;
+        text-align: left;
+    }
+
+    .sec-1 {
+        background-color: #363636;
+    }
+
+    .product-sections {
+        background-color: #fff;
+        color: #363636;
+        padding: 2rem;
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .product-image {
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .product-image:hover {
+        transform: scale(1.2);
+    }
+</style>
+<body>
+    <main>
+        <h1 id="head-title">Document Object Model (DOM)</h1>
+        <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse, ipsam quidem, doloremque, facere sequi exercitationem porro minima delectus harum ad debitis praesentium ut totam iusto perferendis voluptate dolores fuga.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nemo architecto non perferendis corrupti, id error labore eligendi esse repellat, ab beatae quam! In culpa assumenda eum, recusandae sit rerum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptates ea dignissimos numquam amet modi assumenda harum repellendus iure tenetur perferendis optio, pariatur vel maxime dolores dolorem at illo cumque?</p>
+    </main>
+
+    <section class="sec-1">
+        <div class="items">item1</div>
+        <div class="items">item2</div>
+        <div class="items">item3</div>
+        <div class="items">item4</div>
+        <div class="items">item5</div>
+        <a href="https://www.google.com" id="link" class=" ">MyLink</a>
+        <!-- <img src="images/phone.jpg" alt=""> -->
+    </section>
+
+    <section class="product-sections">
+        <div class="product-container">
+            
+        </div>
+    </section>
+</body>
+</html>
