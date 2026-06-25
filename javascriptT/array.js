@@ -110,7 +110,7 @@ console .log(sumArray);
 const summArray = evenNumber.reduce((acc, curr) => acc + curr, 1);
 console .log(summArray);
 
-/* Write a code that will will list all items that are in the two array let's say we have arryaA and arrayB we want to write a code that will list out the itemm that exist in arrayA and arrayB using filter method */
+/* Write a code that will list all items that are in the two array let's say we have arryaA and arrayB we want to write a code that will list out the itemm that exist in arrayA and arrayB using filter method */
 const arrayA = mapArray;
 const arrayB = mapArrayx2;
 console.log (arrayA);
