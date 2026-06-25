@@ -100,4 +100,17 @@ products.forEach((product) => {//so this is the forEach method we used to loop o
     console.log(email);
 } */
 
+const toast = document.getElementById("toast");
 
+function showToast(message){
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+}
+
+showToast("Post created successfully!");

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript API</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    input, textarea, button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .post {
+        border: 2px solid #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+    }
+
+    .post h3 {
+        margin: 0 0 0.5rem;
+    }
+
+    .post button {
+        margin-right: 0 0 0.5rem;
+    }
+
+    .loading {
+        color: gray;
+    }
+    .error {
+        color: red
+    }
+</style>
+<body>
+    <h1>Post Manager</h1>
+
+    <h2>Add / Edit post</h2>
+    <form id="postForm">
+        <input type="hidden" id="postId" value="">
+        <input type="text" id="titleInput" placeholder="Title" required/>
+        <textarea id="body" placeholder="content"></textarea>
+        <button type="submit" id="save">save post</button>
+        <button type="button" id="cancleBtn">Cancle post</button>
+    </form>
+
+    <h2>posts</h2>
+    <div id="postContainer">Loading....</div>
+
+    <div class="modal">
+
+    </div>
+    <script src="api.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

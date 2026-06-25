@@ -43,10 +43,10 @@ console.log(months.at(4));//The .at() methos is like the the [] to access item t
 console.log(myClub.join(""));//The .join() method joins all the array items into a string. like .tostring() but in the .join() you can specify the seperator in-between
 
 /* SLICE METHOD */
-// The slice method is going to give a new array, inside the slice methode the first parameter is where you're cutting from (that is the staring point) and the second parameter is where to stop, the position to stop but it will not inclide whatever items that is in that position 
+// The slice method is going to give a new array, inside the slice methode the first parameter is where you're cutting from (that is the staring point) and the second parameter is where to stop, the position to stop. But it will not include whatever items that is in that position 
 console.log(months.slice(0, 6 + 1)); 
 const alphabetArray = ["A", "B" ,"C", "D", "E", "F", "G"];
-const alphabetNewArray = alphabetArray.slice(2, 5);
+const alphabetNewArray = alphabetArray.slice(0, 5);
 console.log(alphabetNewArray);
 
 /* Changing Elements */
@@ -136,3 +136,19 @@ for(let accessries of products){
 
 /* Using the forEach Method */
 products.forEach((accessries) => console.log(products));
+
+days = ["MON", "TUE", "WEND", "THUR", "FRI", "SAT", "SUN"]
+ days.forEach((day, i, arr) => {// Here the first parameter should always be the Current Value, the second Parameter should be Index, the third paramater is the entire array
+    console.log(`days of the weeks are ${arr}`)
+    console.log(`day ${i + 1}: ${day}`)
+})
+const allButton = document.querySelectorAll("button")// Actually this will give a node list (in form of an array) it look like array but not really an array
+const arrayButtons = Array.from(allButton)//Array.from() is a JavaScript method that creates a real array from something that looks like an array.
+console.log(allButton)
+console.log(arrayButtons)//This will output all button as an array [button, button, button] like this this is a real array 
+const getButtonText = arrayButtons.map((textButton) => textButton.textContent)//Now i want to get each texts in all the button i will have to map through it and if i map throught it it will be i form of another array
+console.log(getButtonText);
+
+const textsButton = [];
+arrayButtons.forEach((texts) => textsButton.push(texts.textContent))
+console.log(textsButton)
