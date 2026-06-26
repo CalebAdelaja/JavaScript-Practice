@@ -5,16 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocalStorage and Session Storage</title>
 </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    form {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    label {
+        font-size: large;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        min-width: 70%;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: #141414;
+        color: #fff;
+        padding: 12px 14px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        outline: none;
+    }
+
+    button {
+        background: grey;
+        padding: 1rem;
+        padding: 5px;
+        border: none;
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.15s;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        /* gap: 8px; */
+    }
+
+    button:hover{
+        color: white;
+    }
+
+    .display-usersDetails {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .details-Content {
+        /* width: 100%; */
+        background-color: #ccc;
+        border: 2px solid #141414;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+    }
+
+    .details-Content p {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+</style>
 <body>
     <main>
+        <a href=""></a>
         <h2>Local Storage</h2>
         <input type="text" placeholder="Full-Name" id="userInput">
         <h2 id="userName"></h2>
     </main>
+        <h2>Register</h2>
+        <form id="userForm">
+            <div class="form-row">
+                <label for="fistName">First Name*</label>
+                <input type="text" id="firstName">
+            </div>
+            
+            <br>
+            <div class="form-row">
+                <label for="LastName">Last Name*</label>
+                <input type="text" id="LastName">
+            </div>
+            
+            <br>
+            <div class="form-row">
+                <label for="email">Email Address*</label>
+                <input type="email" id="userEmail">
+            </div>
+            
+            <br>
+            <button type="submit">Send details</button>
+        </form>
 
-    <section>
-        
-    </section>
+    <!-- Display User Details here  -->
+    <div class="display-usersDetails">
+
+    </div>
     <script src="localStorage.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ async function fetchPost() {
     let response = await fetch("https://jsonplaceholder.typicode.com/posts")
     console.log(response)//This will also return a promise, but we don't want promise we want to get data to we need the await keyword. Await will is going to wait for the promise to be resolved(it can be rejcted ot fulfiled)
     let datas = await response.json();
-    // console.log(typeof(datas)) //Output: Object
+    // console.log(typexof(datas)) //Output: Object
     const shortDatas = datas.slice(0, 5);
     // console.log(typeof(shortDatas)) //Output: Object
     console.log(datas.slice(0, 5));
